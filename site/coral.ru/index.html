@@ -1,0 +1,229 @@
+<body>
+<link rel="stylesheet" href="css/index.css">
+
+<div id="site-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters" style="position:absolute; visibility: hidden; width: 1px;height: 1px;">
+        <defs>
+            <filter id="glitch1">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="1" result="warp" />
+                <feOffset dx="10" dy="10" result="warpOffset" />
+                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="50" in="SourceGraphic" in2="warpOffset" />
+            </filter>
+            <filter id="glitch2">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="1" result="warp" />
+                <feOffset dx="10" dy="10" result="warpOffset" />
+                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="100" in="SourceGraphic" in2="warpOffset" />
+            </filter>
+            <filter id="glitch3">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="1" result="warp" />
+                <feOffset dx="10" dy="10" result="warpOffset" />
+                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="50" in="SourceGraphic" in2="warpOffset" />
+            </filter>
+            <filter id="glitch4">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="1" result="warp" />
+                <feOffset dx="10" dy="10" result="warpOffset" />
+                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="50" in="SourceGraphic" in2="warpOffset" />
+            </filter>
+        </defs>
+    </svg>
+
+    <section class="hero manifest">
+        <div class="inhalt">
+            <div>
+                <img class="arrow-down" src="iii/decor-arrow-down.png">
+                <p>
+                    27 января мы запускаем суперакцию «Кибервыходные». Только 4 дня действует дополнительная скидка на все
+                    пляжные курорты Египта, Эмиратов и Турции на Анталийском и Эгейском побережьях.
+                    <br>Забронируйте тур с 27 по 30 января включительно на любую дату вылета с 1 апреля по 31 октября.
+                    <br><strong>Это выгодно, если вы планируете хотя бы раз отдохнуть на море в этом году</strong>. А еще, мы подготовили для вас подарок &mdash;
+                    вы можете воспользоваться сразу двумя* акциями и позволить себе на отдыхе больше: чаще ездить на экскурсии и в парки
+                    развлечений, дегустировать мороженое в кафе и, конечно же, ходить на шопинг!
+                </p>
+                <div class="actions">
+                    <button class="with-down-arrow" data-glitch="#glitch1">Выбрать тур</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero terms-and-conditions">
+        <div class="inhalt">
+            <div>
+                <div class="info">
+                    <h3>Условия акции «Кибервыходные»</h3>
+                    <ul class="terms-list">
+                        <li><span class="label">Размер скидки <br><strong>3%</strong></span></li>
+                        <li><span class="label">Срок акции <br><strong>с 27 по 30 января</strong> 2023 года</span></li>
+                        <li><span class="label">Даты вылета вашего путешествия <br><strong>с 1 апреля до 31 октября</strong> 2023 года</span></li>
+                        <li><span class="label">Направления <strong>Турция</strong> (Анталийское <br>и Эгейское побережье), <strong>Египет</strong>, <strong>ОАЭ</strong></span></li>
+                        <li><span class="label">Города вылета <br><strong>все</strong></span></li>
+                    </ul>
+                    <p>Введите промокод <strong>CYBER</strong> в поле «Примечание к заказу» во время бронирования на сайте или сообщите менеджеру в офисе Сети Coral Travel.</p>
+                    <p>В акции не участвуют стандартные пакетные туры, включающие авиаперелёт на блоках мест Туроператора Coral Travel</p>
+                    <p>В акции не участвуют GDS-туры. Предложение не суммируется с другими акциями Coral Travel и CoralBonus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero where-to-fly">
+        <div class="inhalt">
+            <div class="heading">
+                <h3>Куда полететь со скидкой</h3>
+                <h4>Турция</h4>
+                <p>
+                    Турция &mdash; страна чистого моря, многообразия отелей, доступного шопинга, русскоговорящего персонала и античных
+                    городов с богатейшей историей. Весной здесь можно гулять по тысячелетним древностям, купаться в подогретом
+                    бассейне отеля и, конечно же, ходить на шопинг за качественной, недорогой одеждой и причудливыми
+                    сувенирами. Летом в Турцию ездят за ровным бронзовым загаром и отдыхом на пляжах Средиземного
+                    и Эгейского морей
+                </p>
+            </div>
+            <div class="alternate-layout">
+                <div class="destination-item">
+                    <div class="visual" style="background-image: url(iii/visual-antalia.jpg);"><span> </span></div>
+                    <div class="info">
+                        <h4>Анталийское побережье</h4>
+                        <p>
+                            Самое южное и хитовое у путешественников. Оно такое теплое, что купаться можно с апреля по октябрь.
+                            Вас ждут десятки курортов и тысячи отелей для любого отдыха и бюджета. Аланью ценят
+                            за песчаные пляжи и доступные цены, Сиде за атмосферный центр, Белек за уединение и элитный сервис.
+                        </p>
+                        <div class="actions">
+                            <a href="https://www.coral.ru/packagetours/moskva-to-turtsiya-tours/?q=%7b%22Bgn%22%3a%2201.06.2023%22%2c%22End%22%3a%2201.06.2023%22%2c%22Dr%22%3a%220%22%2c%22Acc%22%3a%227%22%2c%22Gest%22%3a%222%22%2c%22Q%22%3a%22pWnGss2nw4odwvCf9OU9H5W9%2fMQHg3GYAJ7zFebWIT5msplKwMJxD5lJp18nh9sCTbymwmkXwqbHu691OIG%2fZUXeOtmk7ZznlpvFaG28kEnnRtk2%2bwdxiAky9ZcXgNsQkcIKEDzWVAWzbBpO5lkTcg%3d%3d%22%2c%22Ts%22%3a0%2c%22Las%22%3afalse%2c%22AcId%22%3a0%2c%22FDate%22%3a%220001-01-01T00%3a00%3a00Z%22%2c%22Ref%22%3afalse%2c%22Pstatus%22%3afalse%2c%22TransferPrice%22%3a0.0%2c%22Chr%22%3atrue%2c%22Rglr%22%3afalse%2c%22Srt%22%3a1%7d&f=%7b%22Pr%22%3a%5b0.0%2c0.0%5d%2c%22Rg%22%3a%5b4%2c3%2c6%2c8%2c9%2c67%2c69%2c70%2c72%2c10646%2c2131%2c14583%2c79%2c84%2c87%2c90%2c91%2c83%2c1948%2c98%2c100%2c102%2c1949%2c1950%2c1952%2c1951%2c10645%2c107%2c111%2c106%2c113%2c114%2c109%2c2138%2c10778%2c10644%2c128%2c120%2c121%2c122%2c123%2c119%2c124%2c125%2c10647%2c127%5d%2c%22Rh%22%3afalse%2c%22Ao%22%3a%5b%22available%22%5d%7d&page=1&pp=&sort=" target="_blank">Выбрать тур</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <div class="visual" style="background-image: url(iii/visual-aegean.jpg);"><span> </span></div>
+                    <div class="info">
+                        <h4>Эгейское побережье</h4>
+                        <p>
+                            Небанальное направление для отдыха с горными вершинами, зелеными рощами и лазурными бухтами.
+                            Температуры воды на 2-3 градуса ниже, поэтому сезон здесь начинается позже, с началом летних
+                            месяцев. Этим можно воспользоваться, чтобы сбежать от зноя к свежему бризу в горячие летние
+                            месяцы. Курорты: Мармарис с живописными скалами и рощами, Фетхие с прозрачной водой, элитный
+                            Бодрум и еще 7+ разнообразных курортов.
+                        </p>
+                        <div class="actions">
+                            <a href="https://www.coral.ru/packagetours/moskva-to-turtsiya-tours/?q=%7b%22Bgn%22%3a%2201.06.2023%22%2c%22End%22%3a%2201.06.2023%22%2c%22Dr%22%3a%220%22%2c%22Acc%22%3a%227%22%2c%22Gest%22%3a%222%22%2c%22Q%22%3a%22pWnGss2nw4odwvCf9OU9H5W9%2fMQHg3GYAJ7zFebWIT5msplKwMJxD5lJp18nh9sCTbymwmkXwqbHu691OIG%2fZUXeOtmk7ZznlpvFaG28kEnnRtk2%2bwdxiAky9ZcXgNsQkcIKEDzWVAWzbBpO5lkTcg%3d%3d%22%2c%22Ts%22%3a0%2c%22Las%22%3afalse%2c%22AcId%22%3a0%2c%22FDate%22%3a%220001-01-01T00%3a00%3a00Z%22%2c%22Ref%22%3afalse%2c%22Pstatus%22%3afalse%2c%22TransferPrice%22%3a0.0%2c%22Chr%22%3atrue%2c%22Rglr%22%3afalse%2c%22Srt%22%3a1%7d&f=%7b%22Pr%22%3a%5b0.0%2c0.0%5d%2c%22Rg%22%3a%5b29%2c17%2c18%2c210%2c209%2c30%2c19%2c10732%2c20%2c21%2c22%2c32%2c23%2c24%2c25%2c28%2c27%2c42%2c63%2c8654%2c8653%2c40%2c46%2c8995%2c9113%2c8657%2c8655%2c51%2c8425%2c52%2c9114%2c11080%2c14551%2c55%2c57%2c130%2c59%2c60%2c58%2c61%2c8239%2c45%2c43%2c44%2c41%2c2130%5d%2c%22Rh%22%3afalse%2c%22Ao%22%3a%5b%22available%22%5d%7d&page=1&pp=&sort=" target="_blank">Выбрать тур</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <div class="visual" style="background-image: url(iii/visual-egypt.jpg);"><span> </span></div>
+                    <div class="info">
+                        <h3>Египет</h3>
+                        <h4>на несравненный дайвинг!</h4>
+                        <p>
+                            Край песчаных пляжей, теплого моря, всевозможных отелей и древних пирамид. В Египте есть все
+                            для отличного отдыха в разном формате. С семьей в All Inclusive, вдвоем с дорогим человеком
+                            в уединенном отеле или с компанией друзей. В перерывах между солнечными ваннами на пляже
+                            можно посетить пирамиды или отправиться на дайвинг к ярким коралловым рифам, причудливым
+                            морским звездам, цветным рыбкам и плоским скатам. Красному морю нет равных по многообразию
+                            подводного мира.
+                        </p>
+                        <div class="actions">
+                            <a href="https://www.coral.ru/packagetours/moskva-to-egipet-tours/?q=%7b%22Bgn%22%3a%2210.04.2023%22%2c%22End%22%3a%2210.04.2023%22%2c%22Dr%22%3a%220%22%2c%22Acc%22%3a%227%22%2c%22Gest%22%3a%222%22%2c%22Q%22%3a%223JhkR%2fLP45okuTmSoFevnoaAWcfRmD6iD96zoVaAgoYs7m1RMdgNrpEq%2boKwtb2%2fHF8ixSTgHD76ndMbf8IG%2fQPlYPB0sAphl6gFJMI%2bT1ONx%2bBYvspJAKd93ifo9L%2f4DoLYVPrWyb6K9za45q8gjA%3d%3d%22%2c%22Ts%22%3a0%2c%22Las%22%3afalse%2c%22AcId%22%3a0%2c%22FDate%22%3a%220001-01-01T00%3a00%3a00Z%22%2c%22Ref%22%3afalse%2c%22Pstatus%22%3afalse%2c%22TransferPrice%22%3a0.0%2c%22Chr%22%3atrue%2c%22Rglr%22%3afalse%2c%22Srt%22%3a1%7d&f=%7B%22Rh%22:false,%22Ao%22:[%22available%22]%7D&page=1" target="_blank">Выбрать тур</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <div class="visual" style="background-image: url(iii/visual-uae.jpg);"><span> </span></div>
+                    <div class="info">
+                        <h3>Эмираты</h3>
+                        <h4>за крутыми развлечениями!</h4>
+                        <p>
+                            Страна комфортных отелей, доброжелательного сервиса, вечно теплого моря и архитектуры
+                            будущего. Эмираты стараются быть на шаг впереди от остального мира. Здесь единственный в мире
+                            семизвездочный отель, самый высокий небоскреб и лучшие парки развлечений. Можно
+                            совместить купание в море с катанием на гигантских водных горках на острове Яс, подняться на Бурдж-Халиф
+                            или осмотреть громадную мечеть Шейха Заеда на 40 тысяч человек. Ну и, конечно,
+                            отхватить платье на распродаже в большом ТЦ с открытыми магазинами, которые ушли из России.
+                        </p>
+                        <div class="actions">
+                            <a href="https://www.coral.ru/packagetours/moskva-to-oae-tours/?q=%7b%22Bgn%22%3a%2201.04.2023%22%2c%22End%22%3a%2201.04.2023%22%2c%22Dr%22%3a%220%22%2c%22Acc%22%3a%227%22%2c%22Gest%22%3a%222%22%2c%22Q%22%3a%225AYQXWgL264zDDQ3LHAgAsx8S94t%2bfMeRiWBvt81fvWJfm6yI6Z4KdPql5xfPN3WawE5sXsmUfm0LL%2fjxcsPkOYw4%2bu6KGFxh3N%2f1hfBiE1b1uWbmV%2bW2j8CBAidy1uEaj1iXAKyp4f76RTyXFWwEw%3d%3d%22%2c%22Ts%22%3a0%2c%22Las%22%3afalse%2c%22AcId%22%3a0%2c%22FDate%22%3a%220001-01-01T00%3a00%3a00Z%22%2c%22Ref%22%3afalse%2c%22Pstatus%22%3afalse%2c%22TransferPrice%22%3a0.0%2c%22Chr%22%3atrue%2c%22Rglr%22%3afalse%2c%22Srt%22%3a1%7d&f=%7B%22Rh%22:false,%22Ao%22:[%22available%22]%7D&page=1" target="_blank">Выбрать тур</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero double-discount">
+        <div class="inhalt">
+            <div>
+                <h3>В отпуск по двойным скидкам*!</h3>
+                <p>Если вы планируете хоть раз в 2023 году съездить на море с весны до поздней осени, бронируйте тур в «Кибервыходные»
+                    с 27 по 30 января. Вы можете суммировать скидки по акциям «Кибервыходные» и «Раннее бронирование», вот, что вы получите.</p>
+                <p><strong>Скидка 3%</strong> на Кибервыходных + <strong>Скидка до 50%</strong> по «Раннему бронированию» с предоплатой
+                    <strong>всего 10%</strong>**.</p>
+                <p class="note"><a href="#" target="_blank">Условия акции «Раннее бронирование».</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero benefits">
+        <div class="inhalt">
+            <h3>Выгоды Кибервыходных</h3>
+            <div class="benefits-list">
+                <div class="benefit">
+                    <img class="icon" src="iii/icon-benefit-01.png">
+                    <div class="label">Отдохнуть в отпуске дешевле</div>
+                </div>
+                <div class="benefit">
+                    <img class="icon" src="iii/icon-benefit-02.png">
+                    <div class="label">Использовать сразу 2 акции**</div>
+                </div>
+                <div class="benefit">
+                    <img class="icon" src="iii/icon-benefit-03.png">
+                    <div class="label">Позволить себе больше экскурсий и развлечений</div>
+                </div>
+                <div class="benefit">
+                    <img class="icon" src="iii/icon-benefit-04.png">
+                    <div class="label">Порадовать семью отпуском на море</div>
+                </div>
+            </div>
+            <p>
+                <strong>Не пропустите Кибервыходные!</strong> Забронируйте тур по двойным скидкам с 27 по 30 января!
+            </p>
+        </div>
+        <div class="video-box">
+            <div class="backdrop"></div>
+            <div data-vid="792166318" class="vimeo-wrap hidden-on-mobile"></div>
+            <div data-vid="792167042" class="vimeo-wrap hidden-on-desktop"></div>
+            <div class="info-overlay">
+                <p>*Суммируются только акции «Кибервыходные» и «Раннее бронирование». Условия уточняйте у менеджера Coral Travel.</p>
+                <p>**Предоплата 10% в течение 3 рабочих дней с момента подтверждения. Доплата 90% не позднее чем за 11 рабочих дней
+                    до вылета в Турцию и Египет, за 15 рабочих дней для ОАЭ.
+                    <br>Даты вылета: с 01.04.2023 по 31.10.2023. Подробности акции уточняйте у менеджера Coral Travel.</p>
+            </div>
+        </div>
+    </section>
+
+    <script id="_intro_markup" type="mustache/template">
+        <div class="video-box kv">
+            <div class="backdrop"></div>
+            <div id="vimeo-visual-desktop" data-vid="792166621" class="vimeo-wrap hidden-on-mobile"></div>
+            <div id="vimeo-visual-mobile" data-vid="792166859" class="vimeo-wrap hidden-on-desktop"></div>
+            <div class="info-overlay">
+                <div class="msg">
+                    <h2 data-glitch="#glitch3">Объявляем Кибервыходные!</h2>
+                    <p data-glitch="#glitch4">
+                        Цены на туры падают прямо сейчас.
+                        <br>+скидка до 50%* по «Раннему бронированию» с предоплатой всего 10%
+                    </p>
+                    <div class="actions">
+                        <button class="with-down-arrow" data-glitch="#glitch1">Выбрать тур</button>
+                    </div>
+                </div>
+                <div class="discount-badge" data-glitch="#glitch2"><span> </span></div>
+            </div>
+        </div>
+    </script>
+
+</div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script src="js/index.js"></script>
+
+</body>
