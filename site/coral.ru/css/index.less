@@ -170,7 +170,7 @@
 			background-size: auto 56.2em, auto 56.2em;
 			@media screen and (max-width: @mobile-breakpoint) {
 				background: url("../iii/section-where-bg-upper-mobile.jpg") center top no-repeat, url("../iii/section-where-bg-lower-mobile.jpg") center bottom no-repeat;
-				background-size: auto 23em, auto 23em;
+				background-size: 100% auto, 100% auto;
 			}
 			>.inhalt {
 				.silly-b2c-font-size(@max-font-size: 20px, @mobile-based-font-size: 24px);
@@ -194,6 +194,9 @@
 					padding: 4em 2em;
 					>*:nth-child(n+2) {
 						margin-top: 3%;
+						@media screen and (max-width: @mobile-breakpoint) {
+							margin-top: 7%;
+						}
 					}
 					p {
 						max-width: 55em;

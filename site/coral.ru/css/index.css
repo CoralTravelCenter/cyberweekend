@@ -498,7 +498,7 @@ body .contentLayout-BaseContainer .notcritical > .container > .row .rightcol > h
 @media screen and (max-width: 768px) {
   #site-wrap section.where-to-fly {
     background: url("../iii/section-where-bg-upper-mobile.jpg") center top no-repeat, url("../iii/section-where-bg-lower-mobile.jpg") center bottom no-repeat;
-    background-size: auto 23em, auto 23em;
+    background-size: 100% auto, 100% auto;
   }
 }
 #site-wrap section.where-to-fly > .inhalt {
@@ -545,6 +545,11 @@ body .contentLayout-BaseContainer .notcritical > .container > .row .rightcol > h
 }
 #site-wrap section.where-to-fly > .inhalt .heading > *:nth-child(n+2) {
   margin-top: 3%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section.where-to-fly > .inhalt .heading > *:nth-child(n+2) {
+    margin-top: 7%;
+  }
 }
 #site-wrap section.where-to-fly > .inhalt .heading p {
   max-width: 55em;
