@@ -1,0 +1,270 @@
+@font-face {
+	font-family: 'museosans';
+	font-weight: bold;
+	src: url('https://font.static.useinsider.com/coraltravel/museosanscyrl-700-webfont.ttf');
+}
+
+@font-face {
+	font-family: 'museosans';
+	font-weight: 500;
+	src: url('https://font.static.useinsider.com/coraltravel/museosanscyrl-500-webfont.ttf');
+}
+
+@font-face {
+	font-family: 'museosans';
+	font-weight: normal;
+	src: url('https://font.static.useinsider.com/coraltravel/museosanscyrl-300-webfont.ttf');
+}
+
+@wide-breakpoint: 1440px;
+@mobile-breakpoint: 768px;
+@narrow-breakpoint: 576px;
+
+.fluid-fontsize(@fluid, @max-breakpoint: @wide-breakpoint) {
+	font-size: @fluid;
+	@media screen and (min-width: @max-breakpoint) {
+		font-size: unit(unit(@fluid) * unit(@max-breakpoint) / 100, px);
+	}
+}
+
+.silly-b2c-font-size(@max-font-size: 16px; @mobile-based-font-size: 20px; @mobile-base-breakpoint: 576px; @max-breakpoint: 1440px; @mid-breakpoint: 1200px; @mob-breakpoint: 768px) {
+	font-size: @max-font-size;
+	@media screen and (max-width: (@max-breakpoint - 1px)) {
+		font-size: (@max-font-size * @mid-breakpoint / @max-breakpoint);
+	}
+	@media screen and (max-width: (@mid-breakpoint - 1px)) {
+		font-size: unit(unit(@max-font-size) / unit(@mid-breakpoint) * 100, vw);
+	}
+	@media screen and (max-width: @mob-breakpoint) {
+		font-size: unit(unit(@mobile-based-font-size) / unit(@mobile-base-breakpoint) * 100, vw);
+	}
+}
+
+.abs100x100() {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.proportional(@width2height-ratio) {
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		padding-top: 1/@width2height-ratio * 100%;
+	}
+	& > * {
+		.abs100x100;
+	}
+}
+.unproportional() {
+	position: relative;
+	&:before {
+		content: none;
+	}
+	& > * {
+		.reset;
+	}
+}
+
+.transit(@what: all, @duration: 0.5s) {
+	-webkit-transition+: @what @duration;
+	-moz-transition+: @what @duration;
+	-ms-transition+: @what @duration;
+	-o-transition+: @what @duration;
+	transition+: @what @duration;
+}
+
+.trsall(@duration: 0.5s) {
+	.transit(@duration: @duration);
+}
+
+.flex-column() {
+	display: flex;
+	flex-direction: column;
+	> * {
+		max-width: 100%;
+	}
+}
+
+.flex-center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#home-countdown {
+	.proportional(1370/129);
+	width: 100%;
+	max-width: 1370px;
+	margin: 2em auto;
+	background: url("../iii/home-countdown-bg-desktop.jpg") center no-repeat;
+	background-size: cover;
+	border-radius: 1em;
+	@media screen and (max-width: @mobile-breakpoint) {
+		.proportional(720/674);
+		background-image: url(../iii/home-countdown-bg-mobile.jpg);
+		border-radius: 1.5em;
+	}
+
+	.inhalt {
+		.silly-b2c-font-size();
+		font-family: museosans;
+		font-weight: normal;
+		color: white;
+
+		display: flex;
+		padding: 0 19%;
+		@media screen and (max-width: @mobile-breakpoint) {
+		    flex-direction: column;
+			align-items: center;
+			text-align: center;
+			padding: 4% 10% 12%;
+		}
+		strong {
+			font-weight: bold;
+		}
+
+		p {
+			margin: 0;
+		}
+		.info {
+			flex: 1 1 auto;
+			.flex-column;
+			justify-content: center;
+			h3 {
+				font-size: 26/16em;
+				font-weight: bold;
+				margin: 0;
+				color: inherit;
+				@media screen and (max-width: @mobile-breakpoint) {
+					font-size: 35/24em;
+				}
+			}
+			p {
+				margin-top: .5em;
+				@media screen and (max-width: @mobile-breakpoint) {
+					margin-top: 1.5em;
+				}
+			}
+		}
+		.countdown-widget {
+			display: flex;
+			width: 30%;
+			justify-content: center;
+			align-items: center;
+			//margin: auto;
+			//background-color: #abc;
+			@media screen and (max-width: @mobile-breakpoint) {
+				width: auto;
+				height: 38%;
+			}
+			[data-units] {
+				position: relative;
+				.flex-column;
+				align-items: center;
+				margin: 0.1em 0.25em 0;
+				//padding: 1em 0.5em;
+				font-size: 32/16em;
+				font-weight: bold;
+				@media screen and (max-width: 1199px) {
+					font-size: 1.8em;
+				}
+				@media screen and (max-width: @mobile-breakpoint) {
+					font-size: 2.3em;
+				}
+				&.insignificant:not(.always-visible) {
+					display: none!important;
+				}
+				&:not(.insignificant) + [data-units], &.always-visible + [data-units] {
+					&:before {
+						content: '';
+						position: absolute;
+						right: 100%;
+						top: 0.2em;
+						//transform: translateY(-50%);
+						height: 0.6em;
+						width: .5em;
+						background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDkgNTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAuMzQxNzk3IDguOTExMzFWMC45Mzk5NDFIOC4xMTM4OFY4LjkxMTMxSDAuMzQxNzk3Wk0wLjM0MTc5NyA1MS4wNTk5VjQzLjA4ODZIOC4xMTM4OFY1MS4wNTk5SDAuMzQxNzk3WiIgZmlsbD0iYmxhY2siLz48L3N2Zz4K") center no-repeat;
+						background-size: contain;
+						filter: invert(1);
+					}
+				}
+				.couple {
+					display: flex;
+					.flipper-stack {
+						position: relative;
+						width: .62em;
+						height: 1em;
+						margin: 0 0;
+						line-height: 1;
+						@media screen and (max-width: @mobile-breakpoint) {
+
+						}
+						@media screen and (max-width: @narrow-breakpoint) {
+
+						}
+						.flipper {
+							.abs100x100;
+							z-index: 1;
+							transform: translateZ(0);
+
+							&.flip-out {
+								&:before, &:after {
+									opacity: 0;
+								}
+							}
+
+							&.flip-in {
+								z-index: 0;
+								&:after, &:before {
+									opacity: 0;
+								}
+							}
+
+							&:before, &:after {
+								position: absolute;
+								width: 100%;
+								height: 50%;
+								left: 0;
+								content: attr(data-digit);
+								text-align: center;
+								overflow: hidden;
+								opacity: 1;
+								//background: linear-gradient(270deg, #E52A53 -2.67%, #8E141C 104.83%);
+								//-webkit-background-clip: text;
+								//-webkit-text-fill-color: transparent;
+								//background-clip: text;
+								//text-fill-color: transparent;
+							}
+
+							&:before {
+								top: 0;
+								line-height: 1;
+								border-radius: .08em .08em 0 0;
+								transition: opacity .25s;
+							}
+
+							&:after {
+								top: 50%;
+								line-height: 0;
+								border-radius: 0 0 .08em .08em;
+								transition: opacity .25s;
+							}
+						}
+					}
+				}
+				.label {
+					font-weight: normal;
+					color: inherit;
+					//margin-top: 1em;
+					font-size: 14/32em;
+				}
+			}
+		}
+	}
+
+
+}

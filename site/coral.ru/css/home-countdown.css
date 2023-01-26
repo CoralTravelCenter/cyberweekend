@@ -1,0 +1,227 @@
+@font-face {
+  font-family: 'museosans';
+  font-weight: bold;
+  src: url('https://font.static.useinsider.com/coraltravel/museosanscyrl-700-webfont.ttf');
+}
+@font-face {
+  font-family: 'museosans';
+  font-weight: 500;
+  src: url('https://font.static.useinsider.com/coraltravel/museosanscyrl-500-webfont.ttf');
+}
+@font-face {
+  font-family: 'museosans';
+  font-weight: normal;
+  src: url('https://font.static.useinsider.com/coraltravel/museosanscyrl-300-webfont.ttf');
+}
+#home-countdown {
+  position: relative;
+  width: 100%;
+  max-width: 1370px;
+  margin: 2em auto;
+  background: url("../iii/home-countdown-bg-desktop.jpg") center no-repeat;
+  background-size: cover;
+  border-radius: 1em;
+}
+#home-countdown:before {
+  content: '';
+  display: block;
+  padding-top: 9.41605839%;
+}
+#home-countdown > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  #home-countdown {
+    position: relative;
+    background-image: url(../iii/home-countdown-bg-mobile.jpg);
+    border-radius: 1.5em;
+  }
+  #home-countdown:before {
+    content: '';
+    display: block;
+    padding-top: 93.61111111%;
+  }
+  #home-countdown > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+#home-countdown .inhalt {
+  font-size: 16px;
+  font-family: museosans;
+  font-weight: normal;
+  color: white;
+  display: flex;
+  padding: 0 19%;
+}
+@media screen and (max-width: 1439px) {
+  #home-countdown .inhalt {
+    font-size: 13.33333333px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #home-countdown .inhalt {
+    font-size: 1.33333333vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  #home-countdown .inhalt {
+    font-size: 3.47222222vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  #home-countdown .inhalt {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4% 10% 12%;
+  }
+}
+#home-countdown .inhalt strong {
+  font-weight: bold;
+}
+#home-countdown .inhalt p {
+  margin: 0;
+}
+#home-countdown .inhalt .info {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#home-countdown .inhalt .info > * {
+  max-width: 100%;
+}
+#home-countdown .inhalt .info h3 {
+  font-size: 1.625em;
+  font-weight: bold;
+  margin: 0;
+  color: inherit;
+}
+@media screen and (max-width: 768px) {
+  #home-countdown .inhalt .info h3 {
+    font-size: 1.45833333em;
+  }
+}
+#home-countdown .inhalt .info p {
+  margin-top: 0.5em;
+}
+@media screen and (max-width: 768px) {
+  #home-countdown .inhalt .info p {
+    margin-top: 1.5em;
+  }
+}
+#home-countdown .inhalt .countdown-widget {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  #home-countdown .inhalt .countdown-widget {
+    width: auto;
+    height: 38%;
+  }
+}
+#home-countdown .inhalt .countdown-widget [data-units] {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.1em 0.25em 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+#home-countdown .inhalt .countdown-widget [data-units] > * {
+  max-width: 100%;
+}
+@media screen and (max-width: 1199px) {
+  #home-countdown .inhalt .countdown-widget [data-units] {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 768px) {
+  #home-countdown .inhalt .countdown-widget [data-units] {
+    font-size: 2.3em;
+  }
+}
+#home-countdown .inhalt .countdown-widget [data-units].insignificant:not(.always-visible) {
+  display: none!important;
+}
+#home-countdown .inhalt .countdown-widget [data-units]:not(.insignificant) + [data-units]:before,
+#home-countdown .inhalt .countdown-widget [data-units].always-visible + [data-units]:before {
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: 0.2em;
+  height: 0.6em;
+  width: 0.5em;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDkgNTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAuMzQxNzk3IDguOTExMzFWMC45Mzk5NDFIOC4xMTM4OFY4LjkxMTMxSDAuMzQxNzk3Wk0wLjM0MTc5NyA1MS4wNTk5VjQzLjA4ODZIOC4xMTM4OFY1MS4wNTk5SDAuMzQxNzk3WiIgZmlsbD0iYmxhY2siLz48L3N2Zz4K") center no-repeat;
+  background-size: contain;
+  filter: invert(1);
+}
+#home-countdown .inhalt .countdown-widget [data-units] .couple {
+  display: flex;
+}
+#home-countdown .inhalt .countdown-widget [data-units] .couple .flipper-stack {
+  position: relative;
+  width: 0.62em;
+  height: 1em;
+  margin: 0 0;
+  line-height: 1;
+}
+#home-countdown .inhalt .countdown-widget [data-units] .couple .flipper-stack .flipper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform: translateZ(0);
+}
+#home-countdown .inhalt .countdown-widget [data-units] .couple .flipper-stack .flipper.flip-out:before,
+#home-countdown .inhalt .countdown-widget [data-units] .couple .flipper-stack .flipper.flip-out:after {
+  opacity: 0;
+}
+#home-countdown .inhalt .countdown-widget [data-units] .couple .flipper-stack .flipper.flip-in {
+  z-index: 0;
+}
+#home-countdown .inhalt .countdown-widget [data-units] .couple .flipper-stack .flipper.flip-in:after,
+#home-countdown .inhalt .countdown-widget [data-units] .couple .flipper-stack .flipper.flip-in:before {
+  opacity: 0;
+}
+#home-countdown .inhalt .countdown-widget [data-units] .couple .flipper-stack .flipper:before,
+#home-countdown .inhalt .countdown-widget [data-units] .couple .flipper-stack .flipper:after {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  left: 0;
+  content: attr(data-digit);
+  text-align: center;
+  overflow: hidden;
+  opacity: 1;
+}
+#home-countdown .inhalt .countdown-widget [data-units] .couple .flipper-stack .flipper:before {
+  top: 0;
+  line-height: 1;
+  border-radius: 0.08em 0.08em 0 0;
+  transition: opacity 0.25s;
+}
+#home-countdown .inhalt .countdown-widget [data-units] .couple .flipper-stack .flipper:after {
+  top: 50%;
+  line-height: 0;
+  border-radius: 0 0 0.08em 0.08em;
+  transition: opacity 0.25s;
+}
+#home-countdown .inhalt .countdown-widget [data-units] .label {
+  font-weight: normal;
+  color: inherit;
+  font-size: 0.4375em;
+}

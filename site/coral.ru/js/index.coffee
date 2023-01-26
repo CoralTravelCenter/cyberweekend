@@ -58,6 +58,9 @@ ASAP ->
 
     $('body .subpage-search-bg > .background').append $('#_intro_markup').html()
 
+    preload 'https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js', ->
+        $(document).on 'click', '[data-scrollto]', -> $(window).scrollTo $(this).attr('data-scrollto'), 500, offset: -150
+
     responsiveHandler = (query, match_handler, unmatch_handler) ->
         layout = matchMedia query
         layout.addEventListener 'change', (e) ->

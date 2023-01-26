@@ -123,6 +123,13 @@ window.DEBUG = 'APP NAME';
 ASAP(function() {
   var io, responsiveHandler;
   $('body .subpage-search-bg > .background').append($('#_intro_markup').html());
+  preload('https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js', function() {
+    return $(document).on('click', '[data-scrollto]', function() {
+      return $(window).scrollTo($(this).attr('data-scrollto'), 500, {
+        offset: -150
+      });
+    });
+  });
   responsiveHandler = function(query, match_handler, unmatch_handler) {
     var layout;
     layout = matchMedia(query);

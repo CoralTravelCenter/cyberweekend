@@ -948,6 +948,15 @@ body .contentLayout-BaseContainer .notcritical > .container > .row .rightcol > h
   background-size: contain;
   margin-left: 1em;
 }
+#hotels-set {
+  max-width: 1440px;
+  margin: 3% auto 3em;
+}
+@media screen and (max-width: 768px) {
+  #hotels-set {
+    margin: 6% auto 3em;
+  }
+}
 body .subpage-search-bg > .background {
   position: static;
   left: auto;
