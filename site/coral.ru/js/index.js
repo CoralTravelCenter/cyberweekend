@@ -123,6 +123,7 @@ window.DEBUG = 'APP NAME';
 ASAP(function() {
   var io, responsiveHandler;
   $('body .subpage-search-bg > .background').append($('#_intro_markup').html());
+  $('#hotels-set').appendTo('.hotel-list-plaeholder');
   preload('https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js', function() {
     return $(document).on('click', '[data-scrollto]', function() {
       return $(window).scrollTo($(this).attr('data-scrollto'), 500, {
