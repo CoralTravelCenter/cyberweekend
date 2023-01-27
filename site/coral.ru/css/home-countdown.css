@@ -18,7 +18,7 @@
   width: 100%;
   max-width: 1370px;
   margin: 2em auto;
-  background: url("../iii/home-countdown-bg-desktop.jpg") center no-repeat;
+  background: url("../iii/home-countdown-bg2-desktop.jpg") center no-repeat;
   background-size: cover;
   border-radius: 1em;
 }
@@ -37,13 +37,13 @@
 @media screen and (max-width: 768px) {
   #home-countdown {
     position: relative;
-    background-image: url(../iii/home-countdown-bg-mobile.jpg);
+    background-image: url(../iii/home-countdown-bg2-mobile.jpg);
     border-radius: 1.5em;
   }
   #home-countdown:before {
     content: '';
     display: block;
-    padding-top: 93.61111111%;
+    padding-top: 66.66666667%;
   }
   #home-countdown > * {
     position: absolute;
@@ -59,7 +59,7 @@
   font-weight: normal;
   color: white;
   display: flex;
-  padding: 0 19%;
+  padding: 0 26.2% 0 23%;
 }
 @media screen and (max-width: 1439px) {
   #home-countdown .inhalt {
@@ -81,7 +81,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 4% 10% 12%;
+    padding: 0% 10% 11%;
   }
 }
 #home-countdown .inhalt strong {
@@ -100,14 +100,19 @@
   max-width: 100%;
 }
 #home-countdown .inhalt .info h3 {
-  font-size: 1.625em;
+  font-size: 2em;
   font-weight: bold;
   margin: 0;
   color: inherit;
 }
+@media screen and (max-width: 1199px) {
+  #home-countdown .inhalt .info h3 {
+    font-size: 1.8em;
+  }
+}
 @media screen and (max-width: 768px) {
   #home-countdown .inhalt .info h3 {
-    font-size: 1.45833333em;
+    font-size: 1.7em;
   }
 }
 #home-countdown .inhalt .info p {
@@ -149,7 +154,7 @@
 }
 @media screen and (max-width: 768px) {
   #home-countdown .inhalt .countdown-widget [data-units] {
-    font-size: 2.3em;
+    font-size: 2.2em;
   }
 }
 #home-countdown .inhalt .countdown-widget [data-units].insignificant:not(.always-visible) {

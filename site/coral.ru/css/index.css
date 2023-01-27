@@ -336,7 +336,7 @@ body .contentLayout-BaseContainer .notcritical > .container > .row .rightcol > h
   justify-content: space-evenly;
   text-align: center;
   color: white;
-  padding: 2% 0 7.8%;
+  padding: 3% 0 7.7%;
 }
 @media screen and (max-width: 768px) {
   #site-wrap section.manifest > .inhalt > div {
@@ -865,8 +865,8 @@ body .contentLayout-BaseContainer .notcritical > .container > .row .rightcol > h
   padding: 0 1em;
 }
 #site-wrap section.benefits .hotel-list-wrap h3 {
-  font-size: 2em;
-  padding: 2em 0 0.5em;
+  font-size: 2.5em;
+  padding: 1.5em 0 0.5em;
   margin: 0 auto;
   text-align: center;
   max-width: 20em;

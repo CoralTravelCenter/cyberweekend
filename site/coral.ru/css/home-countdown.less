@@ -100,12 +100,12 @@
 	width: 100%;
 	max-width: 1370px;
 	margin: 2em auto;
-	background: url("../iii/home-countdown-bg-desktop.jpg") center no-repeat;
+	background: url("../iii/home-countdown-bg2-desktop.jpg") center no-repeat;
 	background-size: cover;
 	border-radius: 1em;
 	@media screen and (max-width: @mobile-breakpoint) {
-		.proportional(720/674);
-		background-image: url(../iii/home-countdown-bg-mobile.jpg);
+		.proportional(720/480);
+		background-image: url(../iii/home-countdown-bg2-mobile.jpg);
 		border-radius: 1.5em;
 	}
 
@@ -114,14 +114,13 @@
 		font-family: museosans;
 		font-weight: normal;
 		color: white;
-
 		display: flex;
-		padding: 0 19%;
+		padding: 0 26.2% 0 23%;
 		@media screen and (max-width: @mobile-breakpoint) {
 		    flex-direction: column;
 			align-items: center;
 			text-align: center;
-			padding: 4% 10% 12%;
+			padding: 0% 10% 11%;
 		}
 		strong {
 			font-weight: bold;
@@ -135,12 +134,15 @@
 			.flex-column;
 			justify-content: center;
 			h3 {
-				font-size: 26/16em;
+				font-size: 32/16em;
 				font-weight: bold;
 				margin: 0;
 				color: inherit;
+				@media screen and (max-width: 1199px) {
+					font-size: 1.8em;
+				}
 				@media screen and (max-width: @mobile-breakpoint) {
-					font-size: 35/24em;
+					font-size: 1.7em;
 				}
 			}
 			p {
@@ -173,7 +175,7 @@
 					font-size: 1.8em;
 				}
 				@media screen and (max-width: @mobile-breakpoint) {
-					font-size: 2.3em;
+					font-size: 2.2em;
 				}
 				&.insignificant:not(.always-visible) {
 					display: none!important;

@@ -258,16 +258,12 @@ ASAP(function() {
 });
 
 ASAP(function() {
-  var start_countdown_at;
-  start_countdown_at = moment('2023-01-26T09:10:00Z');
-  if (moment().isAfter(start_countdown_at)) {
-    return $('#home-countdown').slideDown(function() {
-      window.$countdown = $('.countdown-widget').Flipdown({
-        momentX: moment('2023-01-30T20:59:59Z')
-      });
-      return $countdown.on('time-is-up', function() {
-        return $countdown.closest('.widgetcontainer').slideUp();
-      }).Flipdown('start');
+  return $('#home-countdown').slideDown(function() {
+    window.$countdown = $('.countdown-widget').Flipdown({
+      momentX: moment('2023-01-30T20:59:59Z')
     });
-  }
+    return $countdown.on('time-is-up', function() {
+      return $countdown.closest('.widgetcontainer').slideUp();
+    }).Flipdown('start');
+  });
 });

@@ -148,11 +148,9 @@ ASAP ->
                         data[option].apply(data, args)
 
 ASAP ->
-    start_countdown_at = moment('2023-01-26T09:10:00Z')
-    if moment().isAfter start_countdown_at
-        $('#home-countdown').slideDown ->
-            window.$countdown = $('.countdown-widget').Flipdown
-                momentX: moment('2023-01-30T20:59:59Z')
-            $countdown.on 'time-is-up', ->
-                $countdown.closest('.widgetcontainer').slideUp()
-            .Flipdown('start')
+    $('#home-countdown').slideDown ->
+        window.$countdown = $('.countdown-widget').Flipdown
+            momentX: moment('2023-01-30T20:59:59Z')
+        $countdown.on 'time-is-up', ->
+            $countdown.closest('.widgetcontainer').slideUp()
+        .Flipdown('start')

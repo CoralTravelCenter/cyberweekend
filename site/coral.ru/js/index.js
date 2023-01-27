@@ -124,6 +124,12 @@ ASAP(function() {
   var io, responsiveHandler;
   $('body .subpage-search-bg > .background').append($('#_intro_markup').html());
   $('#hotels-set').appendTo('.hotel-list-plaeholder');
+  $(document).on('click', '[data-ym-reachgoal]', function() {
+    return typeof ym === "function" ? ym(553380, 'reachGoal', $(this).attr('data-ym-reachgoal')) : void 0;
+  });
+  $(document).on('click', '.card-cell .buttonlike', function() {
+    return typeof ym === "function" ? ym(553380, 'reachGoal', 'cyber-bron') : void 0;
+  });
   preload('https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js', function() {
     return $(document).on('click', '[data-scrollto]', function() {
       return $(window).scrollTo($(this).attr('data-scrollto'), 500, {

@@ -59,6 +59,9 @@ ASAP ->
     $('body .subpage-search-bg > .background').append $('#_intro_markup').html()
     $('#hotels-set').appendTo('.hotel-list-plaeholder')
 
+    $(document).on 'click', '[data-ym-reachgoal]', () -> ym?(553380,'reachGoal',$(this).attr('data-ym-reachgoal'))
+    $(document).on 'click', '.card-cell .buttonlike', () -> ym?(553380,'reachGoal','cyber-bron')
+
     preload 'https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js', ->
         $(document).on 'click', '[data-scrollto]', -> $(window).scrollTo $(this).attr('data-scrollto'), 500, offset: -150
 
